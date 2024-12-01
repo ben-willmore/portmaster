@@ -1,0 +1,28 @@
+#!/bin/bash
+
+export NEWT_COLORS='
+checkbox=blue,lightgray
+actsellistbox=white,blue
+button=white,blue
+'
+
+BINARY=whiptail
+
+SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
+
+OS=`uname -o | sed "s/GNU\///"`
+CPU=`uname -m`
+
+PREFIX=
+SUFFIX=
+
+if [[ -z `which ${BINARY}` ]]; then
+  PREFIX="${SCRIPT_DIR}/"
+  SUFFIX=".$OS.$CPU"
+  export LD_LIBRARY_PATH="${SCRIPT_DIR}/lib.$OS.$CPU":${LD_LIBRARY_PATH}
+  export DYLD_LIBRARY_PATH="${SCRIPT_DIR}/lib.$OS.$CPU":${DYLD_LIBRARY_PATH}
+fi
+
+"${PREFIX}${BINARY}${SUFFIX}" "${@}"
+
+exit $?

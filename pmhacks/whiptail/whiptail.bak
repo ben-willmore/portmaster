@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
+
+OS=`uname -o | sed "s/GNU\///"`
+CPU=`uname -m`
+
+if [[ $OS == Darwin ]]; then
+  export DYLD_LIBRARY_PATH=$SCRIPT_DIR/lib.$OS.$CPU:${DYLD_LIBRARY_PATH}
+else
+  export LD_LIBRARY_PATH=$SCRIPT_DIR/lib.$OS.$CPU:${LD_LIBRARY_PATH}
+fi
+
+${SCRIPT_DIR}/whiptail.$OS.$CPU
+
+exit $?
+

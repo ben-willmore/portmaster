@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gameList>
+  <game>
+    <path>./SDLTerm.sh</path>
+    <name>SDLTerm</name>
+    <desc>SDL2 Terminal Emulator based on libvterm and sdlfox</desc>
+    <releasedate>20241112</releasedate>
+    <publisher>palomina@github</publisher>
+    <image>./sdlterm/sdlterm.png</image>
+  </game>
+</gameList>

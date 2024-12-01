@@ -1,0 +1,32 @@
+{
+    "version": 3,
+    "name": "sdlterm.zip",
+    "items": [
+        "SDLTerm.sh",
+        "sdlterm/"
+    ],
+    "items_opt": null,
+    "attr": {
+        "title": "SDLTerm",
+        "desc": "",
+        "inst": "",
+        "genres": [],
+        "porter": [],
+        "image": {},
+        "rtr": false,
+        "exp": false,
+        "runtime": null,
+        "reqs": [],
+        "arch": []
+    },
+    "status": {
+        "source": "file",
+        "md5": "a9f23ef60bc33953ff28bad87e49cdf0",
+        "status": "Installed"
+    },
+    "files": {
+        "port.json": "sdlterm/port.json",
+        "SDLTerm.sh": "SDLTerm.sh",
+        "sdlterm/": "sdlterm/"
+    }
+}

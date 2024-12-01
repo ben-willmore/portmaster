@@ -1,0 +1,78 @@
+--- dlls/Microsoft.Xna.Framework.Game.dll.config	2024-11-11 14:57:34
++++ dlls.hacksdl/Microsoft.Xna.Framework.Game.dll.config	2024-11-11 14:54:04
+@@ -1,5 +1,22 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <configuration>
+-	<dllmap dll="SDL2.dll" os="linux" target="libSDL2-2.0.so.0"/>
++	<dllmap dll="SDL2.dll" os="linux" target="libSDL2-2.0.so.0">
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_Init"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceGUID"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickOpen"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickNameForIndex"/>
++		<dllentry dll="hacksdl.aarch64.so" name="JoystickGetDeviceVendor"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceProduct"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceProductVersion"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceType"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceInstanceID"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerOpen"/>
++		<dllentry dll="hacksdl.aarch64.so" name="GameControllerMappingForIndex"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_IsGameController"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerNameForIndex"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerMappingForDeviceIndex"/>
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerGetAxis"/>
++		<dllentry dll="libSDL2-2.0.so.0" name="*"/>
++	</dllmap>
+ 	<dllmap dll="soft_oal.dll" target="libopenal.so.1"/>
+ </configuration>
+--- dlls/Microsoft.Xna.Framework.dll.config	2024-11-11 14:57:34
++++ dlls.hacksdl/Microsoft.Xna.Framework.dll.config	2024-11-11 14:54:04
+@@ -1,5 +1,22 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <configuration>
+-	<dllmap dll="SDL2.dll" os="linux" target="libSDL2-2.0.so.0"/>
++	<dllmap dll="SDL2.dll" os="linux" target="libSDL2-2.0.so.0">
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_Init"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceGUID"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickOpen"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickNameForIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="JoystickGetDeviceVendor"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceProduct"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceProductVersion"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceType"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceInstanceID"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerOpen"/>
++                <dllentry dll="hacksdl.aarch64.so" name="GameControllerMappingForIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_IsGameController"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerNameForIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerMappingForDeviceIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerGetAxis"/>
++		<dllentry dll="libSDL2-2.0.so.0" name="*" />
++	</dllmap>
+ 	<dllmap dll="soft_oal.dll" target="libopenal.so.1"/>
+ </configuration>
+--- dlls/MonoGame.Framework.dll.config	2024-11-11 14:57:34
++++ dlls.hacksdl/MonoGame.Framework.dll.config	2024-11-11 14:54:04
+@@ -1,5 +1,22 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <configuration>
+-	<dllmap dll="SDL2.dll" os="linux" target="libSDL2-2.0.so.0"/>
++	<dllmap dll="SDL2.dll" os="linux" target="libSDL2-2.0.so.0">
++		<dllentry dll="hacksdl.aarch64.so" name="SDL_Init"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceGUID"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickOpen"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickNameForIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="JoystickGetDeviceVendor"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceProduct"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceProductVersion"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceType"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_JoystickGetDeviceInstanceID"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerOpen"/>
++                <dllentry dll="hacksdl.aarch64.so" name="GameControllerMappingForIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_IsGameController"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerNameForIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerMappingForDeviceIndex"/>
++                <dllentry dll="hacksdl.aarch64.so" name="SDL_GameControllerGetAxis"/>
++		<dllentry dll="libSDL2-2.0.so.0" name="*" />
++	</dllmap>
+ 	<dllmap dll="soft_oal.dll" target="libopenal.so.1"/>
+ </configuration>

@@ -1,0 +1,20 @@
+INFO: configuration.window.title = sdlterm
+INFO: configuration.window.width is unspecified
+INFO: configuration.window.height is unspecified
+INFO: configuration.window.consolewidth = 1088
+INFO: configuration.window.consoleheight = 672
+INFO: configuration.window.fullscreen = true
+INFO: configuration.window.resizable = false
+INFO: configuration.window.borderless = true
+INFO: configuration.window.ontop = true
+INFO: configuration.logging.priority = 30
+INFO: configuration.font.path = ../sdlterm/LiberationMono-Regular.ttf
+INFO: configuration.font.boldpath = ../sdlterm/LiberationMono-Bold.ttf
+INFO: configuration.font.ptsize = 24
+INFO: configuration.logging.enabled = false
+INFO: configuration.logging.priority = debug
+INFO: configuration.cursor.interval = 500
+INFO: configuration.history.enable = true
+INFO: configuration.history.limit = 0
+INFO: Setting configuration.window.width = 1280
+INFO: Setting configuration.window.height = 720

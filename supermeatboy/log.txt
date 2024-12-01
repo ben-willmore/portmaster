@@ -1,0 +1,552 @@
+/userdata/system/.local/share/PortMaster/libgl_knulli.txt: line 7: glxinfo: command not found
+Setting game resolution to 640x480, detail level to meddetail
+Game language is set to en_US.UTF-8
+Debug level is 1
+Dynarec is On
+BOX86 using "/userdata/roms/ports/supermeatboy/gl4es/libGL.so.1" as libGL.so.1
+Dynarec for ARM, with extension: HALF FAST_MULT EDSP NEON VFPv4 IDIVA PageSize:4096
+Box86 with Dynarec v0.2.1 2cde4916 built on May  5 2021 16:40:48
+BOX86_LD_LIBRARY_PATH: /userdata/roms/ports/supermeatboy/box86/x86/:/userdata/roms/ports/supermeatboy/box86/native/:/userdata/roms/ports/supermeatboy/libs/x86/:/userdata/roms/ports/supermeatboy/gamedata/x86/
+Using default BOX86_PATH: ./:bin/
+Counted 48 Env var
+Looking for ./x86/SuperMeatBoy
+argv[1]="-640x480"
+argv[2]="-meddetail"
+argv[3]="-fullscreen"
+Running in UINPUT output mode.
+Using native(wrapped) libdl.so.2
+Using native(wrapped) libpthread.so.0
+Using native(wrapped) libSDL2-2.0.so.0
+Using native(wrapped) libm.so.6
+Using native(wrapped) librt.so.1
+Using native(wrapped) libopenal.so.1
+Using emulated /userdata/roms/ports/supermeatboy/gamedata/x86/libmariadb.so.1
+Using native(wrapped) libc.so.6
+Using native(wrapped) ld-linux.so.2
+Using emulated /userdata/roms/ports/supermeatboy/gamedata/x86/libsteam_api.so
+Using emulated /userdata/roms/ports/supermeatboy/box86/x86/libstdc++.so.6
+Using emulated /userdata/roms/ports/supermeatboy/box86/x86/libgcc_s.so.1
+Warning, function __pthread_rwlock_rdlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_rdlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_rdlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_rdlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_rdlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_rdlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_wrlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_wrlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_wrlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_wrlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_wrlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_wrlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_unlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_unlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_unlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_unlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_unlock not found in lib libpthread.so.0
+Warning, function __pthread_rwlock_unlock not found in lib libpthread.so.0
+[S_API FAIL] SteamAPI_Init() failed; SteamAPI_IsSteamRunning() failed.
+[S_API FAIL] SteamAPI_Init() failed; unable to locate a running instance of Steam, or a local steamclient.so.
+LIBGL: Initialising gl4es
+LIBGL: v1.1.5 built on Feb 18 2024 20:01:31
+LIBGL: using framebuffer + fbo
+LIBGL: Using GLES 2.0 backend
+LIBGL: loaded: libGLESv2.so
+LIBGL: loaded: libEGL.so
+LIBGL: loaded: libdrm.so
+LIBGL: Using GLES 2.0 backend
+LIBGL: Hardware Full NPOT detected and used
+LIBGL: Extension GL_EXT_blend_minmax  detected and used
+LIBGL: FBO are in core, and so used
+LIBGL: PointSprite are in core, and so used
+LIBGL: CubeMap are in core, and so used
+LIBGL: BlendColor is in core, and so used
+LIBGL: Blend Subtract is in core, and so used
+LIBGL: Blend Function and Equation Separation is in core, and so used
+LIBGL: Texture Mirrored Repeat is in core, and so used
+LIBGL: Extension GL_OES_mapbuffer  detected
+LIBGL: Extension GL_OES_element_index_uint  detected and used
+LIBGL: Extension GL_OES_packed_depth_stencil  detected and used
+LIBGL: Extension GL_OES_depth24  detected and used
+LIBGL: Extension GL_OES_rgb8_rgba8  detected and used
+LIBGL: Extension GL_EXT_texture_format_BGRA8888  detected and used
+LIBGL: Extension GL_OES_depth_texture  detected and used
+LIBGL: Extension GL_OES_texture_stencil8  detected and used
+LIBGL: Extension GL_EXT_texture_rg  detected and used
+LIBGL: Extension GL_EXT_color_buffer_float  detected and used
+LIBGL: Extension GL_EXT_color_buffer_half_float  detected and used
+LIBGL: high precision float in fragment shader available and used
+LIBGL: Max vertex attrib: 16
+LIBGL: Extension GL_OES_standard_derivatives  detected and used
+LIBGL: Extension GL_ARM_shader_framebuffer_fetch detected and used
+LIBGL: Extension GL_OES_get_program_binary  detected and used
+LIBGL: Number of supported Program Binary Format: 1
+LIBGL: Max texture size: 8192
+LIBGL: Max Varying Vector: 15
+LIBGL: Texture Units: 16/16 (hardware: 16), Max lights: 8, Max planes: 6
+LIBGL: Max Color Attachments: 1 / Draw buffers: 1
+LIBGL: Hardware vendor is ARM
+LIBGL: sRGB surface supported
+LIBGL: EGLImage to Texture2D supported
+LIBGL: EGLImage to RenderBuffer supported
+LIBGL: Targeting OpenGL 2.1
+LIBGL: Not trying to batch small subsequent glDrawXXXX
+LIBGL: try to use VBO
+LIBGL: glXMakeCurrent FBO workaround enabled
+LIBGL: FBO workaround for using binded texture enabled
+LIBGL: Force texture for Attachment color0 on FBO
+LIBGL: Hack to trigger a SwapBuffers when a Full Framebuffer Blit on default FBO is done
+LIBGL: Current folder is:/userdata/roms/ports/supermeatboy/gamedata
+LIBGL: Loaded a PSA with 10 Precompiled Programs
+Calling SDL_GL_GetProcAddress("glActiveTexture") => 0x631cf040
+Calling SDL_GL_GetProcAddress("glAlphaFunc") => 0x631cf050
+Calling SDL_GL_GetProcAddress("glBindTexture") => 0x631cf060
+Calling SDL_GL_GetProcAddress("glBlendEquation") => 0x631cf070
+Calling SDL_GL_GetProcAddress("glBlendFunc") => 0x631cf080
+Calling SDL_GL_GetProcAddress("glClear") => 0x631cf090
+Calling SDL_GL_GetProcAddress("glClearColor") => 0x631cf0a0
+Calling SDL_GL_GetProcAddress("glClearDepth") => 0x631cf0b0
+Calling SDL_GL_GetProcAddress("glClearStencil") => 0x631cf0c0
+Calling SDL_GL_GetProcAddress("glColorMask") => 0x631cf0d0
+Calling SDL_GL_GetProcAddress("glCompressedTexImage2D") => 0x631cf0e0
+Calling SDL_GL_GetProcAddress("glCullFace") => 0x631cf0f0
+Calling SDL_GL_GetProcAddress("glDeleteTextures") => 0x631cf100
+Calling SDL_GL_GetProcAddress("glDepthFunc") => 0x631cf110
+Calling SDL_GL_GetProcAddress("glDepthMask") => 0x631cf120
+Calling SDL_GL_GetProcAddress("glDepthRange") => 0x631cf130
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf140
+Calling SDL_GL_GetProcAddress("glDrawArrays") => 0x631cf150
+Calling SDL_GL_GetProcAddress("glDrawElements") => 0x631cf160
+Calling SDL_GL_GetProcAddress("glDrawBuffer") => 0x631cf170
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf180
+Calling SDL_GL_GetProcAddress("glFrontFace") => 0x631cf190
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf1a0
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf1b0
+Calling SDL_GL_GetProcAddress("glGenTextures") => 0x631cf1c0
+Calling SDL_GL_GetProcAddress("glPixelStorei") => 0x631cf1d0
+Calling SDL_GL_GetProcAddress("glPolygonMode") => 0x631cf1e0
+Calling SDL_GL_GetProcAddress("glScissor") => 0x631cf1f0
+Calling SDL_GL_GetProcAddress("glStencilFunc") => 0x631cf200
+Calling SDL_GL_GetProcAddress("glStencilMask") => 0x631cf210
+Calling SDL_GL_GetProcAddress("glStencilOp") => 0x631cf220
+Calling SDL_GL_GetProcAddress("glTexEnvf") => 0x631cf230
+Calling SDL_GL_GetProcAddress("glTexImage2D") => 0x631cf240
+Calling SDL_GL_GetProcAddress("glTexParameteri") => 0x631cf250
+Calling SDL_GL_GetProcAddress("glTexParameterf") => 0x631cf260
+Calling SDL_GL_GetProcAddress("glTexSubImage2D") => 0x631cf270
+Calling SDL_GL_GetProcAddress("glViewport") => 0x631cf280
+Calling SDL_GL_GetProcAddress("glActiveTexture") => 0x631cf040
+Calling SDL_GL_GetProcAddress("glAlphaFunc") => 0x631cf050
+Calling SDL_GL_GetProcAddress("glBindTexture") => 0x631cf060
+Calling SDL_GL_GetProcAddress("glBlendEquation") => 0x631cf070
+Calling SDL_GL_GetProcAddress("glBlendFunc") => 0x631cf080
+Calling SDL_GL_GetProcAddress("glClear") => 0x631cf090
+Calling SDL_GL_GetProcAddress("glClearColor") => 0x631cf0a0
+Calling SDL_GL_GetProcAddress("glClearDepth") => 0x631cf0b0
+Calling SDL_GL_GetProcAddress("glClearStencil") => 0x631cf0c0
+Calling SDL_GL_GetProcAddress("glColorMask") => 0x631cf0d0
+Calling SDL_GL_GetProcAddress("glCompressedTexImage2D") => 0x631cf0e0
+Calling SDL_GL_GetProcAddress("glCullFace") => 0x631cf0f0
+Calling SDL_GL_GetProcAddress("glDeleteTextures") => 0x631cf100
+Calling SDL_GL_GetProcAddress("glDepthFunc") => 0x631cf110
+Calling SDL_GL_GetProcAddress("glDepthMask") => 0x631cf120
+Calling SDL_GL_GetProcAddress("glDepthRange") => 0x631cf130
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf140
+Calling SDL_GL_GetProcAddress("glDrawArrays") => 0x631cf150
+Calling SDL_GL_GetProcAddress("glDrawElements") => 0x631cf160
+Calling SDL_GL_GetProcAddress("glDrawBuffer") => 0x631cf170
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf180
+Calling SDL_GL_GetProcAddress("glFrontFace") => 0x631cf190
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf1a0
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf1b0
+Calling SDL_GL_GetProcAddress("glGenTextures") => 0x631cf1c0
+Calling SDL_GL_GetProcAddress("glPixelStorei") => 0x631cf1d0
+Calling SDL_GL_GetProcAddress("glPolygonMode") => 0x631cf1e0
+Calling SDL_GL_GetProcAddress("glScissor") => 0x631cf1f0
+Calling SDL_GL_GetProcAddress("glStencilFunc") => 0x631cf200
+Calling SDL_GL_GetProcAddress("glStencilMask") => 0x631cf210
+Calling SDL_GL_GetProcAddress("glStencilOp") => 0x631cf220
+Calling SDL_GL_GetProcAddress("glTexEnvf") => 0x631cf230
+Calling SDL_GL_GetProcAddress("glTexImage2D") => 0x631cf240
+Calling SDL_GL_GetProcAddress("glTexParameteri") => 0x631cf250
+Calling SDL_GL_GetProcAddress("glTexParameterf") => 0x631cf260
+Calling SDL_GL_GetProcAddress("glTexSubImage2D") => 0x631cf270
+Calling SDL_GL_GetProcAddress("glViewport") => 0x631cf280
+Calling SDL_GL_GetProcAddress("glBindBufferARB") => 0x631cf290
+Calling SDL_GL_GetProcAddress("glDeleteBuffersARB") => 0x631cf2a0
+Calling SDL_GL_GetProcAddress("glGenBuffersARB") => 0x631cf2b0
+Calling SDL_GL_GetProcAddress("glBufferDataARB") => 0x631cf2c0
+Calling SDL_GL_GetProcAddress("glBufferSubDataARB") => 0x631cf2d0
+Calling SDL_GL_GetProcAddress("glMapBufferARB") => 0x631cf2e0
+Calling SDL_GL_GetProcAddress("glUnmapBufferARB") => 0x631cf2f0
+Calling SDL_GL_GetProcAddress("glBindRenderbufferEXT") => 0x631cf300
+Calling SDL_GL_GetProcAddress("glDeleteRenderbuffersEXT") => 0x631cf310
+Calling SDL_GL_GetProcAddress("glGenRenderbuffersEXT") => 0x631cf320
+Calling SDL_GL_GetProcAddress("glRenderbufferStorageEXT") => 0x631cf330
+Calling SDL_GL_GetProcAddress("glBindFramebufferEXT") => 0x631cf340
+Calling SDL_GL_GetProcAddress("glDeleteFramebuffersEXT") => 0x631cf350
+Calling SDL_GL_GetProcAddress("glGenFramebuffersEXT") => 0x631cf360
+Calling SDL_GL_GetProcAddress("glCheckFramebufferStatusEXT") => 0x631cf370
+Calling SDL_GL_GetProcAddress("glFramebufferTexture2DEXT") => 0x631cf380
+Calling SDL_GL_GetProcAddress("glFramebufferRenderbufferEXT") => 0x631cf390
+Calling SDL_GL_GetProcAddress("glBlitFramebufferEXT") => 0x631cf3a0
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf1b0
+Calling SDL_GL_GetProcAddress("glGetError") => 0x631cf3b0
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf1a0
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf180
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf140
+Calling SDL_GL_GetProcAddress("glDeleteShader") => 0x631cf3c0
+Calling SDL_GL_GetProcAddress("glDeleteProgram") => 0x631cf3d0
+Calling SDL_GL_GetProcAddress("glAttachShader") => 0x631cf3e0
+Calling SDL_GL_GetProcAddress("glCompileShader") => 0x631cf3f0
+Calling SDL_GL_GetProcAddress("glCreateShader") => 0x631cf400
+Calling SDL_GL_GetProcAddress("glCreateProgram") => 0x631cf410
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArray") => 0x631cf420
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArray") => 0x631cf430
+Calling SDL_GL_GetProcAddress("glGetAttribLocation") => 0x631cf440
+Calling SDL_GL_GetProcAddress("glGetProgramInfoLog") => 0x631cf450
+Calling SDL_GL_GetProcAddress("glGetShaderiv") => 0x631cf460
+Calling SDL_GL_GetProcAddress("glGetProgramiv") => 0x631cf470
+Calling SDL_GL_GetProcAddress("glGetUniformLocation") => 0x631cf480
+Calling SDL_GL_GetProcAddress("glLinkProgram") => 0x631cf490
+Calling SDL_GL_GetProcAddress("glShaderSource") => 0x631cf4a0
+Calling SDL_GL_GetProcAddress("glUniform1i") => 0x631cf4b0
+Calling SDL_GL_GetProcAddress("glUniform1iv") => 0x631cf4c0
+Calling SDL_GL_GetProcAddress("glUniform4fv") => 0x631cf4d0
+Calling SDL_GL_GetProcAddress("glUniform4iv") => 0x631cf4e0
+Calling SDL_GL_GetProcAddress("glUseProgram") => 0x631cf4f0
+Calling SDL_GL_GetProcAddress("glVertexAttribPointer") => 0x631cf500
+Calling SDL_GL_GetProcAddress("glDeleteObjectARB") => 0x631cf510
+Calling SDL_GL_GetProcAddress("glAttachObjectARB") => 0x631cf520
+Calling SDL_GL_GetProcAddress("glCompileShaderARB") => 0x631cf3f0
+Calling SDL_GL_GetProcAddress("glCreateProgramObjectARB") => 0x631cf530
+Calling SDL_GL_GetProcAddress("glCreateShaderObjectARB") => 0x631cf540
+Calling SDL_GL_GetProcAddress("glGetInfoLogARB") => 0x631cf550
+Calling SDL_GL_GetProcAddress("glGetObjectParameterivARB") => 0x631cf560
+Calling SDL_GL_GetProcAddress("glGetUniformLocationARB") => 0x631cf480
+Calling SDL_GL_GetProcAddress("glLinkProgramARB") => 0x631cf490
+Calling SDL_GL_GetProcAddress("glShaderSourceARB") => 0x631cf4a0
+Calling SDL_GL_GetProcAddress("glUniform1iARB") => 0x631cf4b0
+Calling SDL_GL_GetProcAddress("glUniform1ivARB") => 0x631cf4c0
+Calling SDL_GL_GetProcAddress("glUniform4fvARB") => 0x631cf4d0
+Calling SDL_GL_GetProcAddress("glUniform4ivARB") => 0x631cf4e0
+Calling SDL_GL_GetProcAddress("glUseProgramObjectARB") => 0x631cf570
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArrayARB") => 0x631cf420
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArrayARB") => 0x631cf430
+Calling SDL_GL_GetProcAddress("glGetAttribLocationARB") => 0x631cf440
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cf500
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cf500
+Calling SDL_GL_GetProcAddress("glGetProgramivARB") => 0x631cf580
+Calling SDL_GL_GetProcAddress("glProgramLocalParameter4fvARB") => 0x631cf590
+Calling SDL_GL_GetProcAddress("glDeleteProgramsARB") => 0x631cf5a0
+Calling SDL_GL_GetProcAddress("glGenProgramsARB") => 0x631cf5b0
+Calling SDL_GL_GetProcAddress("glBindProgramARB") => 0x631cf5c0
+Calling SDL_GL_GetProcAddress("glProgramStringARB") => 0x631cf5d0
+Calling SDL_GL_GetProcAddress("glProgramLocalParameterI4ivNV") => (nil)
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf1b0
+Calling SDL_GL_GetProcAddress("glGetError") => 0x631cf3b0
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf1a0
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf180
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf140
+Calling SDL_GL_GetProcAddress("glDeleteShader") => 0x631cf3c0
+Calling SDL_GL_GetProcAddress("glDeleteProgram") => 0x631cf3d0
+Calling SDL_GL_GetProcAddress("glAttachShader") => 0x631cf3e0
+Calling SDL_GL_GetProcAddress("glCompileShader") => 0x631cf3f0
+Calling SDL_GL_GetProcAddress("glCreateShader") => 0x631cf400
+Calling SDL_GL_GetProcAddress("glCreateProgram") => 0x631cf410
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArray") => 0x631cf420
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArray") => 0x631cf430
+Calling SDL_GL_GetProcAddress("glGetAttribLocation") => 0x631cf440
+Calling SDL_GL_GetProcAddress("glGetProgramInfoLog") => 0x631cf450
+Calling SDL_GL_GetProcAddress("glGetShaderiv") => 0x631cf460
+Calling SDL_GL_GetProcAddress("glGetProgramiv") => 0x631cf470
+Calling SDL_GL_GetProcAddress("glGetUniformLocation") => 0x631cf480
+Calling SDL_GL_GetProcAddress("glLinkProgram") => 0x631cf490
+Calling SDL_GL_GetProcAddress("glShaderSource") => 0x631cf4a0
+Calling SDL_GL_GetProcAddress("glUniform1i") => 0x631cf4b0
+Calling SDL_GL_GetProcAddress("glUniform1iv") => 0x631cf4c0
+Calling SDL_GL_GetProcAddress("glUniform4fv") => 0x631cf4d0
+Calling SDL_GL_GetProcAddress("glUniform4iv") => 0x631cf4e0
+Calling SDL_GL_GetProcAddress("glUseProgram") => 0x631cf4f0
+Calling SDL_GL_GetProcAddress("glVertexAttribPointer") => 0x631cf500
+Calling SDL_GL_GetProcAddress("glDeleteObjectARB") => 0x631cf510
+Calling SDL_GL_GetProcAddress("glAttachObjectARB") => 0x631cf520
+Calling SDL_GL_GetProcAddress("glCompileShaderARB") => 0x631cf3f0
+Calling SDL_GL_GetProcAddress("glCreateProgramObjectARB") => 0x631cf530
+Calling SDL_GL_GetProcAddress("glCreateShaderObjectARB") => 0x631cf540
+Calling SDL_GL_GetProcAddress("glGetInfoLogARB") => 0x631cf550
+Calling SDL_GL_GetProcAddress("glGetObjectParameterivARB") => 0x631cf560
+Calling SDL_GL_GetProcAddress("glGetUniformLocationARB") => 0x631cf480
+Calling SDL_GL_GetProcAddress("glLinkProgramARB") => 0x631cf490
+Calling SDL_GL_GetProcAddress("glShaderSourceARB") => 0x631cf4a0
+Calling SDL_GL_GetProcAddress("glUniform1iARB") => 0x631cf4b0
+Calling SDL_GL_GetProcAddress("glUniform1ivARB") => 0x631cf4c0
+Calling SDL_GL_GetProcAddress("glUniform4fvARB") => 0x631cf4d0
+Calling SDL_GL_GetProcAddress("glUniform4ivARB") => 0x631cf4e0
+Calling SDL_GL_GetProcAddress("glUseProgramObjectARB") => 0x631cf570
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArrayARB") => 0x631cf420
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArrayARB") => 0x631cf430
+Calling SDL_GL_GetProcAddress("glGetAttribLocationARB") => 0x631cf440
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cf500
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cf500
+Calling SDL_GL_GetProcAddress("glGetProgramivARB") => 0x631cf580
+Calling SDL_GL_GetProcAddress("glProgramLocalParameter4fvARB") => 0x631cf590
+Calling SDL_GL_GetProcAddress("glDeleteProgramsARB") => 0x631cf5a0
+Calling SDL_GL_GetProcAddress("glGenProgramsARB") => 0x631cf5b0
+Calling SDL_GL_GetProcAddress("glBindProgramARB") => 0x631cf5c0
+Calling SDL_GL_GetProcAddress("glProgramStringARB") => 0x631cf5d0
+Calling SDL_GL_GetProcAddress("glProgramLocalParameterI4ivNV") => (nil)
+LIBGL: Shuting down
+LIBGL: Initialising gl4es
+LIBGL: v1.1.5 built on Feb 18 2024 20:01:31
+LIBGL: using framebuffer + fbo
+LIBGL: Using GLES 2.0 backend
+LIBGL: loaded: libGLESv2.so
+LIBGL: loaded: libEGL.so
+LIBGL: loaded: libdrm.so
+LIBGL: Using GLES 2.0 backend
+LIBGL: Hardware Full NPOT detected and used
+LIBGL: Extension GL_EXT_blend_minmax  detected and used
+LIBGL: FBO are in core, and so used
+LIBGL: PointSprite are in core, and so used
+LIBGL: CubeMap are in core, and so used
+LIBGL: BlendColor is in core, and so used
+LIBGL: Blend Subtract is in core, and so used
+LIBGL: Blend Function and Equation Separation is in core, and so used
+LIBGL: Texture Mirrored Repeat is in core, and so used
+LIBGL: Extension GL_OES_mapbuffer  detected
+LIBGL: Extension GL_OES_element_index_uint  detected and used
+LIBGL: Extension GL_OES_packed_depth_stencil  detected and used
+LIBGL: Extension GL_OES_depth24  detected and used
+LIBGL: Extension GL_OES_rgb8_rgba8  detected and used
+LIBGL: Extension GL_EXT_texture_format_BGRA8888  detected and used
+LIBGL: Extension GL_OES_depth_texture  detected and used
+LIBGL: Extension GL_OES_texture_stencil8  detected and used
+LIBGL: Extension GL_EXT_texture_rg  detected and used
+LIBGL: Extension GL_EXT_color_buffer_float  detected and used
+LIBGL: Extension GL_EXT_color_buffer_half_float  detected and used
+LIBGL: high precision float in fragment shader available and used
+LIBGL: Max vertex attrib: 16
+LIBGL: Extension GL_OES_standard_derivatives  detected and used
+LIBGL: Extension GL_ARM_shader_framebuffer_fetch detected and used
+LIBGL: Extension GL_OES_get_program_binary  detected and used
+LIBGL: Number of supported Program Binary Format: 1
+LIBGL: Max texture size: 8192
+LIBGL: Max Varying Vector: 15
+LIBGL: Texture Units: 16/16 (hardware: 16), Max lights: 8, Max planes: 6
+LIBGL: Max Color Attachments: 1 / Draw buffers: 1
+LIBGL: Hardware vendor is ARM
+LIBGL: sRGB surface supported
+LIBGL: EGLImage to Texture2D supported
+LIBGL: EGLImage to RenderBuffer supported
+LIBGL: Targeting OpenGL 2.1
+LIBGL: Not trying to batch small subsequent glDrawXXXX
+LIBGL: try to use VBO
+LIBGL: glXMakeCurrent FBO workaround enabled
+LIBGL: FBO workaround for using binded texture enabled
+LIBGL: Force texture for Attachment color0 on FBO
+LIBGL: Hack to trigger a SwapBuffers when a Full Framebuffer Blit on default FBO is done
+LIBGL: Current folder is:/userdata/roms/ports/supermeatboy/gamedata
+LIBGL: Loaded a PSA with 10 Precompiled Programs
+Calling SDL_GL_GetProcAddress("glActiveTexture") => 0x631cf5e0
+Calling SDL_GL_GetProcAddress("glAlphaFunc") => 0x631cf5f0
+Calling SDL_GL_GetProcAddress("glBindTexture") => 0x631cf600
+Calling SDL_GL_GetProcAddress("glBlendEquation") => 0x631cf610
+Calling SDL_GL_GetProcAddress("glBlendFunc") => 0x631cf620
+Calling SDL_GL_GetProcAddress("glClear") => 0x631cf630
+Calling SDL_GL_GetProcAddress("glClearColor") => 0x631cf640
+Calling SDL_GL_GetProcAddress("glClearDepth") => 0x631cf650
+Calling SDL_GL_GetProcAddress("glClearStencil") => 0x631cf660
+Calling SDL_GL_GetProcAddress("glColorMask") => 0x631cf670
+Calling SDL_GL_GetProcAddress("glCompressedTexImage2D") => 0x631cf680
+Calling SDL_GL_GetProcAddress("glCullFace") => 0x631cf690
+Calling SDL_GL_GetProcAddress("glDeleteTextures") => 0x631cf6a0
+Calling SDL_GL_GetProcAddress("glDepthFunc") => 0x631cf6b0
+Calling SDL_GL_GetProcAddress("glDepthMask") => 0x631cf6c0
+Calling SDL_GL_GetProcAddress("glDepthRange") => 0x631cf6d0
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf6e0
+Calling SDL_GL_GetProcAddress("glDrawArrays") => 0x631cf6f0
+Calling SDL_GL_GetProcAddress("glDrawElements") => 0x631cf700
+Calling SDL_GL_GetProcAddress("glDrawBuffer") => 0x631cf710
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf720
+Calling SDL_GL_GetProcAddress("glFrontFace") => 0x631cf730
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf740
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf750
+Calling SDL_GL_GetProcAddress("glGenTextures") => 0x631cf760
+Calling SDL_GL_GetProcAddress("glPixelStorei") => 0x631cf770
+Calling SDL_GL_GetProcAddress("glPolygonMode") => 0x631cf780
+Calling SDL_GL_GetProcAddress("glScissor") => 0x631cf790
+Calling SDL_GL_GetProcAddress("glStencilFunc") => 0x631cf7a0
+Calling SDL_GL_GetProcAddress("glStencilMask") => 0x631cf7b0
+Calling SDL_GL_GetProcAddress("glStencilOp") => 0x631cf7c0
+Calling SDL_GL_GetProcAddress("glTexEnvf") => 0x631cf7d0
+Calling SDL_GL_GetProcAddress("glTexImage2D") => 0x631cf7e0
+Calling SDL_GL_GetProcAddress("glTexParameteri") => 0x631cf7f0
+Calling SDL_GL_GetProcAddress("glTexParameterf") => 0x631cf800
+Calling SDL_GL_GetProcAddress("glTexSubImage2D") => 0x631cf810
+Calling SDL_GL_GetProcAddress("glViewport") => 0x631cf820
+Calling SDL_GL_GetProcAddress("glActiveTexture") => 0x631cf5e0
+Calling SDL_GL_GetProcAddress("glAlphaFunc") => 0x631cf5f0
+Calling SDL_GL_GetProcAddress("glBindTexture") => 0x631cf600
+Calling SDL_GL_GetProcAddress("glBlendEquation") => 0x631cf610
+Calling SDL_GL_GetProcAddress("glBlendFunc") => 0x631cf620
+Calling SDL_GL_GetProcAddress("glClear") => 0x631cf630
+Calling SDL_GL_GetProcAddress("glClearColor") => 0x631cf640
+Calling SDL_GL_GetProcAddress("glClearDepth") => 0x631cf650
+Calling SDL_GL_GetProcAddress("glClearStencil") => 0x631cf660
+Calling SDL_GL_GetProcAddress("glColorMask") => 0x631cf670
+Calling SDL_GL_GetProcAddress("glCompressedTexImage2D") => 0x631cf680
+Calling SDL_GL_GetProcAddress("glCullFace") => 0x631cf690
+Calling SDL_GL_GetProcAddress("glDeleteTextures") => 0x631cf6a0
+Calling SDL_GL_GetProcAddress("glDepthFunc") => 0x631cf6b0
+Calling SDL_GL_GetProcAddress("glDepthMask") => 0x631cf6c0
+Calling SDL_GL_GetProcAddress("glDepthRange") => 0x631cf6d0
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf6e0
+Calling SDL_GL_GetProcAddress("glDrawArrays") => 0x631cf6f0
+Calling SDL_GL_GetProcAddress("glDrawElements") => 0x631cf700
+Calling SDL_GL_GetProcAddress("glDrawBuffer") => 0x631cf710
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf720
+Calling SDL_GL_GetProcAddress("glFrontFace") => 0x631cf730
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf740
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf750
+Calling SDL_GL_GetProcAddress("glGenTextures") => 0x631cf760
+Calling SDL_GL_GetProcAddress("glPixelStorei") => 0x631cf770
+Calling SDL_GL_GetProcAddress("glPolygonMode") => 0x631cf780
+Calling SDL_GL_GetProcAddress("glScissor") => 0x631cf790
+Calling SDL_GL_GetProcAddress("glStencilFunc") => 0x631cf7a0
+Calling SDL_GL_GetProcAddress("glStencilMask") => 0x631cf7b0
+Calling SDL_GL_GetProcAddress("glStencilOp") => 0x631cf7c0
+Calling SDL_GL_GetProcAddress("glTexEnvf") => 0x631cf7d0
+Calling SDL_GL_GetProcAddress("glTexImage2D") => 0x631cf7e0
+Calling SDL_GL_GetProcAddress("glTexParameteri") => 0x631cf7f0
+Calling SDL_GL_GetProcAddress("glTexParameterf") => 0x631cf800
+Calling SDL_GL_GetProcAddress("glTexSubImage2D") => 0x631cf810
+Calling SDL_GL_GetProcAddress("glViewport") => 0x631cf820
+Calling SDL_GL_GetProcAddress("glBindBufferARB") => 0x631cf830
+Calling SDL_GL_GetProcAddress("glDeleteBuffersARB") => 0x631cf840
+Calling SDL_GL_GetProcAddress("glGenBuffersARB") => 0x631cf850
+Calling SDL_GL_GetProcAddress("glBufferDataARB") => 0x631cf860
+Calling SDL_GL_GetProcAddress("glBufferSubDataARB") => 0x631cf870
+Calling SDL_GL_GetProcAddress("glMapBufferARB") => 0x631cf880
+Calling SDL_GL_GetProcAddress("glUnmapBufferARB") => 0x631cf890
+Calling SDL_GL_GetProcAddress("glBindRenderbufferEXT") => 0x631cf8a0
+Calling SDL_GL_GetProcAddress("glDeleteRenderbuffersEXT") => 0x631cf8b0
+Calling SDL_GL_GetProcAddress("glGenRenderbuffersEXT") => 0x631cf8c0
+Calling SDL_GL_GetProcAddress("glRenderbufferStorageEXT") => 0x631cf8d0
+Calling SDL_GL_GetProcAddress("glBindFramebufferEXT") => 0x631cf8e0
+Calling SDL_GL_GetProcAddress("glDeleteFramebuffersEXT") => 0x631cf8f0
+Calling SDL_GL_GetProcAddress("glGenFramebuffersEXT") => 0x631cf900
+Calling SDL_GL_GetProcAddress("glCheckFramebufferStatusEXT") => 0x631cf910
+Calling SDL_GL_GetProcAddress("glFramebufferTexture2DEXT") => 0x631cf920
+Calling SDL_GL_GetProcAddress("glFramebufferRenderbufferEXT") => 0x631cf930
+Calling SDL_GL_GetProcAddress("glBlitFramebufferEXT") => 0x631cf940
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf750
+Calling SDL_GL_GetProcAddress("glGetError") => 0x631cf950
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf740
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf720
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf6e0
+Calling SDL_GL_GetProcAddress("glDeleteShader") => 0x631cf960
+Calling SDL_GL_GetProcAddress("glDeleteProgram") => 0x631cf970
+Calling SDL_GL_GetProcAddress("glAttachShader") => 0x631cf980
+Calling SDL_GL_GetProcAddress("glCompileShader") => 0x631cf990
+Calling SDL_GL_GetProcAddress("glCreateShader") => 0x631cf9a0
+Calling SDL_GL_GetProcAddress("glCreateProgram") => 0x631cf9b0
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArray") => 0x631cf9c0
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArray") => 0x631cf9d0
+Calling SDL_GL_GetProcAddress("glGetAttribLocation") => 0x631cf9e0
+Calling SDL_GL_GetProcAddress("glGetProgramInfoLog") => 0x631cf9f0
+Calling SDL_GL_GetProcAddress("glGetShaderiv") => 0x631cfa00
+Calling SDL_GL_GetProcAddress("glGetProgramiv") => 0x631cfa10
+Calling SDL_GL_GetProcAddress("glGetUniformLocation") => 0x631cfa20
+Calling SDL_GL_GetProcAddress("glLinkProgram") => 0x631cfa30
+Calling SDL_GL_GetProcAddress("glShaderSource") => 0x631cfa40
+Calling SDL_GL_GetProcAddress("glUniform1i") => 0x631cfa50
+Calling SDL_GL_GetProcAddress("glUniform1iv") => 0x631cfa60
+Calling SDL_GL_GetProcAddress("glUniform4fv") => 0x631cfa70
+Calling SDL_GL_GetProcAddress("glUniform4iv") => 0x631cfa80
+Calling SDL_GL_GetProcAddress("glUseProgram") => 0x631cfa90
+Calling SDL_GL_GetProcAddress("glVertexAttribPointer") => 0x631cfaa0
+Calling SDL_GL_GetProcAddress("glDeleteObjectARB") => 0x631cfab0
+Calling SDL_GL_GetProcAddress("glAttachObjectARB") => 0x631cfac0
+Calling SDL_GL_GetProcAddress("glCompileShaderARB") => 0x631cf990
+Calling SDL_GL_GetProcAddress("glCreateProgramObjectARB") => 0x631cfad0
+Calling SDL_GL_GetProcAddress("glCreateShaderObjectARB") => 0x631cfae0
+Calling SDL_GL_GetProcAddress("glGetInfoLogARB") => 0x631cfaf0
+Calling SDL_GL_GetProcAddress("glGetObjectParameterivARB") => 0x631cfb00
+Calling SDL_GL_GetProcAddress("glGetUniformLocationARB") => 0x631cfa20
+Calling SDL_GL_GetProcAddress("glLinkProgramARB") => 0x631cfa30
+Calling SDL_GL_GetProcAddress("glShaderSourceARB") => 0x631cfa40
+Calling SDL_GL_GetProcAddress("glUniform1iARB") => 0x631cfa50
+Calling SDL_GL_GetProcAddress("glUniform1ivARB") => 0x631cfa60
+Calling SDL_GL_GetProcAddress("glUniform4fvARB") => 0x631cfa70
+Calling SDL_GL_GetProcAddress("glUniform4ivARB") => 0x631cfa80
+Calling SDL_GL_GetProcAddress("glUseProgramObjectARB") => 0x631cfb10
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArrayARB") => 0x631cf9c0
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArrayARB") => 0x631cf9d0
+Calling SDL_GL_GetProcAddress("glGetAttribLocationARB") => 0x631cf9e0
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cfaa0
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cfaa0
+Calling SDL_GL_GetProcAddress("glGetProgramivARB") => 0x631cfb20
+Calling SDL_GL_GetProcAddress("glProgramLocalParameter4fvARB") => 0x631cfb30
+Calling SDL_GL_GetProcAddress("glDeleteProgramsARB") => 0x631cfb40
+Calling SDL_GL_GetProcAddress("glGenProgramsARB") => 0x631cfb50
+Calling SDL_GL_GetProcAddress("glBindProgramARB") => 0x631cfb60
+Calling SDL_GL_GetProcAddress("glProgramStringARB") => 0x631cfb70
+Calling SDL_GL_GetProcAddress("glProgramLocalParameterI4ivNV") => (nil)
+Calling SDL_GL_GetProcAddress("glGetString") => 0x631cf750
+Calling SDL_GL_GetProcAddress("glGetError") => 0x631cf950
+Calling SDL_GL_GetProcAddress("glGetIntegerv") => 0x631cf740
+Calling SDL_GL_GetProcAddress("glEnable") => 0x631cf720
+Calling SDL_GL_GetProcAddress("glDisable") => 0x631cf6e0
+Calling SDL_GL_GetProcAddress("glDeleteShader") => 0x631cf960
+Calling SDL_GL_GetProcAddress("glDeleteProgram") => 0x631cf970
+Calling SDL_GL_GetProcAddress("glAttachShader") => 0x631cf980
+Calling SDL_GL_GetProcAddress("glCompileShader") => 0x631cf990
+Calling SDL_GL_GetProcAddress("glCreateShader") => 0x631cf9a0
+Calling SDL_GL_GetProcAddress("glCreateProgram") => 0x631cf9b0
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArray") => 0x631cf9c0
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArray") => 0x631cf9d0
+Calling SDL_GL_GetProcAddress("glGetAttribLocation") => 0x631cf9e0
+Calling SDL_GL_GetProcAddress("glGetProgramInfoLog") => 0x631cf9f0
+Calling SDL_GL_GetProcAddress("glGetShaderiv") => 0x631cfa00
+Calling SDL_GL_GetProcAddress("glGetProgramiv") => 0x631cfa10
+Calling SDL_GL_GetProcAddress("glGetUniformLocation") => 0x631cfa20
+Calling SDL_GL_GetProcAddress("glLinkProgram") => 0x631cfa30
+Calling SDL_GL_GetProcAddress("glShaderSource") => 0x631cfa40
+Calling SDL_GL_GetProcAddress("glUniform1i") => 0x631cfa50
+Calling SDL_GL_GetProcAddress("glUniform1iv") => 0x631cfa60
+Calling SDL_GL_GetProcAddress("glUniform4fv") => 0x631cfa70
+Calling SDL_GL_GetProcAddress("glUniform4iv") => 0x631cfa80
+Calling SDL_GL_GetProcAddress("glUseProgram") => 0x631cfa90
+Calling SDL_GL_GetProcAddress("glVertexAttribPointer") => 0x631cfaa0
+Calling SDL_GL_GetProcAddress("glDeleteObjectARB") => 0x631cfab0
+Calling SDL_GL_GetProcAddress("glAttachObjectARB") => 0x631cfac0
+Calling SDL_GL_GetProcAddress("glCompileShaderARB") => 0x631cf990
+Calling SDL_GL_GetProcAddress("glCreateProgramObjectARB") => 0x631cfad0
+Calling SDL_GL_GetProcAddress("glCreateShaderObjectARB") => 0x631cfae0
+Calling SDL_GL_GetProcAddress("glGetInfoLogARB") => 0x631cfaf0
+Calling SDL_GL_GetProcAddress("glGetObjectParameterivARB") => 0x631cfb00
+Calling SDL_GL_GetProcAddress("glGetUniformLocationARB") => 0x631cfa20
+Calling SDL_GL_GetProcAddress("glLinkProgramARB") => 0x631cfa30
+Calling SDL_GL_GetProcAddress("glShaderSourceARB") => 0x631cfa40
+Calling SDL_GL_GetProcAddress("glUniform1iARB") => 0x631cfa50
+Calling SDL_GL_GetProcAddress("glUniform1ivARB") => 0x631cfa60
+Calling SDL_GL_GetProcAddress("glUniform4fvARB") => 0x631cfa70
+Calling SDL_GL_GetProcAddress("glUniform4ivARB") => 0x631cfa80
+Calling SDL_GL_GetProcAddress("glUseProgramObjectARB") => 0x631cfb10
+Calling SDL_GL_GetProcAddress("glDisableVertexAttribArrayARB") => 0x631cf9c0
+Calling SDL_GL_GetProcAddress("glEnableVertexAttribArrayARB") => 0x631cf9d0
+Calling SDL_GL_GetProcAddress("glGetAttribLocationARB") => 0x631cf9e0
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cfaa0
+Calling SDL_GL_GetProcAddress("glVertexAttribPointerARB") => 0x631cfaa0
+Calling SDL_GL_GetProcAddress("glGetProgramivARB") => 0x631cfb20
+Calling SDL_GL_GetProcAddress("glProgramLocalParameter4fvARB") => 0x631cfb30
+Calling SDL_GL_GetProcAddress("glDeleteProgramsARB") => 0x631cfb40
+Calling SDL_GL_GetProcAddress("glGenProgramsARB") => 0x631cfb50
+Calling SDL_GL_GetProcAddress("glBindProgramARB") => 0x631cfb60
+Calling SDL_GL_GetProcAddress("glProgramStringARB") => 0x631cfb70
+Calling SDL_GL_GetProcAddress("glProgramLocalParameterI4ivNV") => (nil)
+11643|SIGSEGV @0xf72513fc (???(/lib32/libc.so.6/0xf72513fc)) (x86pc=0x631cf02b/???:"???", esp=0xd9184e78, stack=0xd8f85000:0xd9185000 own=0xd8f85000 fp=(nil)), for accessing 0x2d32 (code=-6/prot=0), db=(nil)((nil):(nil)/(nil):(nil)/???:clean, hash:0/0)
+LIBGL: Shuting down
+11570|SIGSEGV @0x10 (???(0x10)) (x86pc=0x631cf02b/???:"???", esp=0xf68435cc, stack=0xf6044000:0xf6844000 own=(nil) fp=0xf68435e8), for accessing 0x10 (code=1/prot=0), db=(nil)((nil):(nil)/(nil):(nil)/???:clean, hash:0/0)
+11570|Double SIGSEGV (code=1, pc=0x10, addr=0x10)!
+/userdata/roms/ports/Super Meat Boy.sh: line 117: systemctl: command not found

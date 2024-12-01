@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+
+from os import listdir
+from os.path import realpath, dirname
+from subprocess import run
+import json
+import dialog
+
+port_dir = dirname(dirname(realpath(__file__)))
+launcher_dir = port_dir + '/launcher'
+game_dir = port_dir + '/gamedata'
+favorites_file = port_dir + '/gamedata/favorites.json'
+
+d = dialog.Dialog()
+
+## Main menu
+
+def load_favorites(favorites_file):
+  try:
+    with open(favorites_file, 'r') as json_file:
+      favorites = json.load(json_file)
+  except BaseException as err:
+    raise(err)
+    favorites = []
+  return favorites
+
+def check_favorites(games, favorites):
+  favorites.sort(key=str.casefold)
+  present = []
+  for favorite in favorites:
+    if favorite in games:
+      present.append(favorite)
+    else:
+      print('Removing missing game %s from favorites' % favorite)
+  save_favorites(favorites_file, present)
+  return present
+
+def save_favorites(favorites_file, favorites):
+  with open(favorites_file, 'w') as json_file:
+    favorites = json.dump(favorites, json_file)
+
+def add_to_favorites(favorites_file, favorites, favorite):
+  favorites.append(favorite)
+  favorites = check_favorites(games, favorites)
+  save_favorites(favorites_file, favorites)
+  return favorites
+
+def remove_from_favorites(favorites_file, favorites, favorite):
+  favorites.remove(favorite)
+  favorites = check_favorites(games, favorites)
+  save_favorites(favorites_file, favorites)
+  return favorites
+
+def get_gamelist(game_dir):
+  games = listdir(game_dir)
+  games.sort(key=str.casefold)
+  valid = []
+  for game in games:
+    if game=='favorites.json':
+      pass
+    else:
+      valid.append(game)
+  return valid
+
+def fmt_game(filename, favorites=None):
+  bits = filename.split('.')
+  name = '.'.join(bits[:-1]) + ' (' + bits[-1] + ')'
+  if favorites and filename in favorites:
+    name = name + ' *'
+  return name
+
+games = get_gamelist(game_dir)
+favorites = load_favorites(favorites_file)
+favorites = check_favorites(games, favorites)
+
+def favorites_menu(games, favorites):
+    menu = {str(i+1): fmt_game(game) for i, game in enumerate(favorites)}
+    filenames = {str(i+1): game for i, game in enumerate(favorites)}
+
+    menu[' '] = 'Edit favorites'
+
+    resp, choice = d.menu('Favorites - choose game to launch:', \
+                          choices=menu.items())
+
+    if resp == d.OK:
+      if choice == ' ':
+        favorites = library_menu(games, favorites)
+        favorites_menu(games, favorites)
+      else:
+        print(menu[choice], filenames[choice], favorites)
+        ext = filenames[choice].split('.')[-1]
+        if ext in ('ulx', 'gblorb', 'zblorb'):
+          bin_dir=port_dir+'/glulxe'
+        elif ext in ['z'+str(i) for i in range(1,10)]:
+          bin_dir=port_dir+'/frotz'
+        elif ext in ('.gam'):
+          bin_dir=port_dir+'/tads'
+
+        run([bin_dir+'/launch.bash', game_dir+'/'+filenames[choice]])
+
+def library_menu(games, favorites):
+  resp = d.OK
+  while resp == d.OK:
+    menu = {str(i+1): fmt_game(game), game in favorites \
+            for i, game in enumerate(games)}
+    filenames = {str(i+1): game for i, game in enumerate(games)}
+
+    resp, choice = d.menu('Add to / remove from favorites (*):', \
+                          choices=menu.items(),
+                          cancel_label='Finished', begin=[10,10])
+
+    if resp == d.OK:
+      print(menu[choice], filenames[choice], favorites)
+      if filenames[choice] in favorites:
+        print('remove')
+        favorites = remove_from_favorites(favorites_file, favorites, \
+                                          filenames[choice])
+      else:
+        favorites = add_to_favorites(favorites_file, favorites, \
+                                      filenames[choice])
+  return favorites
+
+if len(favorites)>0:
+  favorites_menu(games, favorites)
+else:
+  favorites = library_menu(games, favorites)
+  favorites_menu(games, favorites)
+
+
+#save_favorites(favorites_file, ['hello'])
+#favorites = load_favorites(favorites_file)
+#print(favorites)
+#favorites = check_favorites(games, favorites)
+#print(favorites)
+
+exit(0)
+favorites = listdir(favorites_dir)
+
+if len(favorites) > 0:
+  menu = {str(i+1): game for i, game in enumerate(games)}
+else:
+  menu = {str(i+1): game for i, game in enumerate(games)}
+resp, choice = d.menu('IF Launcher', choices=menu.items())
+
+if resp == d.OK:
+  call([launcher_dir+'/launch_frotz.bash', game_dir+'/'+menu[choice]])

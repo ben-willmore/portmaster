@@ -30,7 +30,7 @@ cd $GAMEDIR
 > "$GAMEDIR/log.txt" && exec > >(tee "$GAMEDIR/log.txt") 2>&1
 
 # remove extraneous files
-rm -rf Config.dat DoConfig.exe OrgView.exe
+rm -rf Config.dat DoConfig.exe OrgView.exe *.dll
 
 bind_directories ~/.local/share/doukutsu-rs $GAMEDIR/conf
 

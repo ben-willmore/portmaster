@@ -15,7 +15,6 @@ These may be applicable to other other ports.
 ## Missing libFLAC.so.8
 
 * Shadow Warrior
-* UFO 50
 
 These are missing [libFLAC.so.8](https://github.com/ben-willmore/portmaster/blob/main/daikatana/libs.aarch64/libFLAC.so.8). Install the port as normal, then copy libFLAC.so.8 to `<portfolder>/libs/libFLAC.so.8`. Other ports with the same problem may be fixed the same way, although the library folder may be called `libs.aarch64`, or you may need to create one called `libs.aarch64`.
 

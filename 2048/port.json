@@ -1,0 +1,46 @@
+{
+    "version": 3,
+    "name": "2048.zip",
+    "items": [
+        "2048.sh",
+        "2048/"
+    ],
+    "items_opt": null,
+    "attr": {
+        "title": "2048",
+        "desc": "The 2048 puzzle game",
+        "inst": "Ready to run.",
+        "genres": [
+            "puzzle"
+        ],
+        "porter": [
+            "Christian_Haitian"
+        ],
+        "image": {
+            "screenshot": "screenshot.jpg",
+            "covers": [],
+            "thumbnail": null,
+            "video": null
+        },
+        "rtr": true,
+        "runtime": null,
+        "reqs": [],
+        "arch": [
+            "aarch64",
+            "armhf"
+        ],
+        "desc_md": null,
+        "inst_md": null,
+        "exp": false
+    },
+    "status": {
+        "source": "PortMaster",
+        "md5": "4941b846afabf38d6142ac2e9db0cdf8",
+        "status": "Installed"
+    },
+    "files": {
+        "port.json": "2048/port.json",
+        "2048.sh": "2048.sh",
+        "2048/": "2048/"
+    }
+}

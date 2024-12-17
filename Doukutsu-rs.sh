@@ -43,12 +43,12 @@ else
 fi
 
 if [ "$LIBGL_FB" != "" ]; then
-export SDL_VIDEO_GL_DRIVER="$GAMEDIR/gl4es.aarch64/libGL.so.1"
-export SDL_VIDEO_EGL_DRIVER="$GAMEDIR/gl4es.aarch64/libEGL.so.1"
-#export LIBGL_FB=1
+  export SDL_VIDEO_GL_DRIVER="$GAMEDIR/gl4es.aarch64/libGL.so.1"
+  export SDL_VIDEO_EGL_DRIVER="$GAMEDIR/gl4es.aarch64/libEGL.so.1"
 fi 
 
-$GPTOKEYB "$BINARY" -c "./$BINARY.gptk" &
+#$GPTOKEYB "$BINARY" -c "./$BINARY.gptk" &
+$GPTOKEYB "$BINARY" &
 
 pm_platform_helper "$GAMEDIR/$BINARY"
 

@@ -11,3 +11,36 @@ index fd91da3..8627420 100644
          gl_attr.set_context_version(2, 1);
  
          let mut win_builder = video.window("Cave Story (doukutsu-rs)", size_hint.0 as _, size_hint.1 as _);
+diff --git a/src/game/settings.rs b/src/game/settings.rs
+index e598415..aa91df8 100644
+--- a/src/game/settings.rs
++++ b/src/game/settings.rs
+@@ -140,20 +140,20 @@ fn default_screen_shake_intensity() -> ScreenShakeIntensity {
+ 
+ #[inline(always)]
+ fn default_p1_controller_type() -> ControllerType {
+-    if cfg!(any(target_os = "horizon")) {
++    // if cfg!(any(target_os = "horizon")) {
+         ControllerType::Gamepad(0)
+-    } else {
+-        ControllerType::Keyboard
+-    }
++    // } else {
++    //     ControllerType::Keyboard
++    // }
+ }
+ 
+ #[inline(always)]
+ fn default_p2_controller_type() -> ControllerType {
+-    if cfg!(any(target_os = "horizon")) {
++    // if cfg!(any(target_os = "horizon")) {
+         ControllerType::Gamepad(1)
+-    } else {
+-        ControllerType::Keyboard
+-    }
++    // } else {
++    //     ControllerType::Keyboard
++    // }
+ }
+ 
+ #[inline(always)]

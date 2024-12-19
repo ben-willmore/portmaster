@@ -12,15 +12,19 @@ Place the relevant .zip file in `/userdata/system/.local/share/Portmaster/autoin
 
 These may be applicable to other other ports.
 
-## Missing libFLAC.so.8
+## Missing libFLAC.so.8 or libcrypto.so.1.1
 
 * Shadow Warrior
 
-These are missing [libFLAC.so.8](https://github.com/ben-willmore/portmaster/blob/main/daikatana/libs.aarch64/libFLAC.so.8). Install the port as normal, then copy libFLAC.so.8 to `<portfolder>/libs/libFLAC.so.8`. Other ports with the same problem may be fixed the same way, although the library folder may be called `libs.aarch64`, or you may need to create one called `libs.aarch64`.
+Messages about these missing libraries can be fixed as follows:
+
+* Install the port as normal
+* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs) to `<portfolder>/libs/` or `<portfolder/libs.aarch64` if they exist. If they don't create a folder called `libs.aarch64` and put the file there.
+
 
 ## Problems with libEGL
 
-A common problem seems to be that, when a port provides libGL.so.1, this is incompatible with the system's libEGL.so.1. This can be solved by adding [libEGL.so.1](https://github.com/ben-willmore/portmaster/blob/main/daikatana/gl4es.aarch64/libEGL.so.1) to the same folder as `libGL.so.`, and adding to the `.sh` file. Where you find:
+A common problem seems to be that, when a port provides libGL.so.1, this is incompatible with the system's libEGL.so.1. This can be solved by adding [libEGL.so.1](https://github.com/ben-willmore/portmaster/blob/main/libs/libEGL.so.1) to the same folder as `libGL.so.`, and adding to the `.sh` file. Where you find:
 
 `export SDL_VIDEO_GL_DRIVER="$GAMEDIR/gl4es.aarch64/libGL.so.1"`
 

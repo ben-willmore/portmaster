@@ -47,8 +47,6 @@ if [ "$LIBGL_FB" != "" ]; then
   export SDL_VIDEO_EGL_DRIVER="$GAMEDIR/gl4es.aarch64/libEGL.so.1"
 fi
 
-export LD_LIBRARY_PATH=$GAMEDIR/lib.aarch64:$LD_LIBRARY_PATH
-
 $GPTOKEYB "$BINARY" &
 
 pm_platform_helper "$GAMEDIR/$BINARY"

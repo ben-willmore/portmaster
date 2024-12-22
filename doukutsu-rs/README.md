@@ -42,10 +42,5 @@ cargo build --release
 
 cd ..
 
-mkdir doukutsu-rs-port
-cd doukutsu-rs-port
-cp ../doukutsu-rs/target/release/doukutsu-rs .
-mkdir lib.aarch64
-cp /usr/lib/libSDL2_image-2.0.so.0 ./lib.aarch64/
-# libSDL2 taken from portal port ./portal/lib/libSDL2-2.0.so.0.2800.5
+# binary is doukutsu-rs/target/release/doukutsu-rs
 ```

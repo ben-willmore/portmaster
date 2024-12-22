@@ -9,10 +9,43 @@ Thanks to Studio Pixel/Nicalis for the original game and Cave Story+. Thanks to 
 ## Compile
 
 ```
-# This was compliled on on arm64 Ubuntu 24.04 as follows:
+# ubuntu 20.04 focal, without SDL installed but with its dependencies.
+# See src/Dockerfile
 
-git clone https://github.com/doukutsu-rs/doukutsu-rs.git
+mkdir shared/doukutsu-build
+cd shared/doukutsu-build
+
+git clone https://github.com/libsdl-org/SDL
+cd SDL
+git checkout release-2.26.2
+./configure --prefix=/usr
+make
+sudo make install
+
+cd ..
+
+git clone https://github.com/libsdl-org/SDL_image.git
+cd SDL_image
+git checkout release-2.8.3
+mkdir build
+cd build
+cmake ..
+make
+sudo cmake --install . --prefix /usr
+
+cd ../..
+
+git clone https://github.com/doukutsu-rs/doukutsu-rs
 cd doukutsu-rs
-patch -p1 < doukutsu-rs.patch # in src/
+patch -p1 < ../src/doukutsu-rs.patch
 cargo build --release
+
+cd ..
+
+mkdir doukutsu-rs-port
+cd doukutsu-rs-port
+cp ../doukutsu-rs/target/release/doukutsu-rs .
+mkdir lib.aarch64
+cp /usr/lib/libSDL2_image-2.0.so.0 ./lib.aarch64/
+# libSDL2 taken from portal port ./portal/lib/libSDL2-2.0.so.0.2800.5
 ```

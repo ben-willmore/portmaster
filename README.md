@@ -15,12 +15,18 @@ These may be applicable to other other ports.
 ## Missing libFLAC.so.8 or libcrypto.so.1.1
 
 * Shadow Warrior
+* Blood
+* Redneck Rampage
+* Redneck Rampage 2
 
 Messages about these missing libraries can be fixed as follows:
 
 * Install the port as normal
-* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs) to `<portfolder>/libs/` or `<portfolder/libs.aarch64` if they exist. If they don't create a folder called `libs.aarch64` and put the file there.
+* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs) to `<portfolder>/libs/` or `<portfolder/libs.aarch64` if they exist. If they don't, create a folder called `libs.aarch64` and put the file there.
 
+**OR**
+
+* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs) to `<portfolder>/libs/` to `/usr/lib/`. Then run `batocera-save-overlay` to make the addition permanent. This should fix all ports with this problem, by making the library available to all programs.
 
 ## Problems with libEGL
 

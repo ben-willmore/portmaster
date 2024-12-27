@@ -30,6 +30,11 @@ mkdir -p "$GAMEDIR/conf"
 
 # Exports
 export LD_LIBRARY_PATH="$GAMEDIR/libs.${DEVICE_ARCH}:$LD_LIBRARY_PATH"
+
+if [[ $CFW_NAME == "knulli" ]]; then
+  export LD_LIBRARY_PATH="$GAMEDIR/libs.knulli.${DEVICE_ARCH}:$LD_LIBRARY_PATH"
+fi
+
 export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
 export TEXTINPUTINTERACTIVE="Y"
 export XDG_DATA_HOME="$CONFDIR"

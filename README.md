@@ -30,7 +30,7 @@ Messages about these missing libraries can be fixed as follows:
 
 ## Problems with libEGL
 
-A common problem seems to be that, when a port provides libGL.so.1, this is incompatible with the system's libEGL.so.1. This can be solved by adding [libEGL.so.1](https://github.com/ben-willmore/portmaster/blob/main/libs/libEGL.so.1) to the same folder as `libGL.so.`, and adding to the `.sh` file. Where you find:
+A common problem seems to be that, when a port provides libGL.so.1, this is incompatible with the system's libEGL.so.1. This can be solved by adding [libEGL.so.1](https://github.com/ben-willmore/portmaster/blob/main/libs/libEGL.so.1) to the same folder as `libGL.so.1`, and adding to the `.sh` file. Where you find:
 
 `export SDL_VIDEO_GL_DRIVER="$GAMEDIR/gl4es.aarch64/libGL.so.1"`
 
@@ -39,3 +39,5 @@ Add:
 `export SDL_VIDEO_EGL_DRIVER="$GAMEDIR/gl4es.aarch64/libEGL.so.1"`
 
 Note that `gl4es.aarch64` may vary between ports, and your new line needs to match the existing one.
+
+If the above doesn't work you may also need to put this [libGL.so.1](https://github.com/ben-willmore/portmaster/blob/main/libs/libGL.so.1) in the same folder as libEGL.so.1.

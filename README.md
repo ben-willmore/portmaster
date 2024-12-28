@@ -15,9 +15,6 @@ These may be applicable to other other ports.
 ## Missing libFLAC.so.8 or libcrypto.so.1.1
 
 * Shadow Warrior
-* Blood
-* Redneck Rampage
-* Redneck Rampage 2
 
 Messages about these missing libraries can be fixed as follows:
 

@@ -32,7 +32,8 @@ mkdir -p "$GAMEDIR/conf"
 export LD_LIBRARY_PATH="$GAMEDIR/libs.${DEVICE_ARCH}:$LD_LIBRARY_PATH"
 
 if [[ $CFW_NAME == "knulli" ]]; then
-  export LD_LIBRARY_PATH="$GAMEDIR/libs.knulli.${DEVICE_ARCH}:$LD_LIBRARY_PATH"
+  export SDL_ROTATION=1
+  export SDL_BLITTER_DISABLED=1
 fi
 
 export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"

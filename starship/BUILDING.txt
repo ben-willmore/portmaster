@@ -1,0 +1,24 @@
+# This was built on arm64 Ubuntu 24.04 (noble) -- see build/Dockerfile
+
+# Build
+git clone https://github.com/HarbourMasters/Starship.git
+cd Starship
+
+git submodule update --init --recursive
+cmake -H. -Bbuild-cmake -GNinja -DUSE_OPENGLES=1 -DBUILD_CROWD_CONTROL=0 \
+ -DCMAKE_BUILD_TYPE=Release
+cmake --build build-cmake --config Release -j$(nproc)
+
+# Assemble build products
+mkdir starship
+cp build-cmake/Starship ./starship
+cp build-cmake/torch/src/torch-build/torch ./starship
+cp config.yml ./starship
+mkdir starship/include
+cp include/bgm.h include/sf64object.h include/sf64level.h \
+ include/sf64mesg.h include/sf64audio_external.h \
+ include/sf64event.h include/sf64player.h \
+ starship/include/
+cp -r assets ./starship
+mkdir gamedata
+touch gamedata/.gitkeep

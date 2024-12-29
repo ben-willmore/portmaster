@@ -1,4 +1,5 @@
 #!/bin/bash
+# PORTMASTER: starship.zip, Starship.sh
 # PORTMASTER:
 
 XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
@@ -28,14 +29,25 @@ cd $GAMEDIR
 
 > "$GAMEDIR/log.txt" && exec > >(tee "$GAMEDIR/log.txt") 2>&1
 
+# Exports
+export PATCHER_FILE="$GAMEDIR/tools/patchscript"
+export PATCHER_GAME="$(basename "${0%.*}")" # This gets the current script filename without the extension
+export PATCHER_TIME="5 minutes"
+
 # Extract assets
 if [[ ! -f $GAMEDIR/sf64.otr ]]; then
   find "$GAMEDIR/gamedata" -type f | while read file
   do
     checksum=$(md5sum "$file" | awk '{print $1}')
     if [[ "$checksum" == 741a94eee093c4c8684e66b89f8685e8 ]]; then
-      echo Found ROM $file, extracting assets
-      $GAMEDIR/torch otr $file
+      if [ -f "$controlfolder/utils/patcher.txt" ]; then
+        cp $file $GAMEDIR/baserom.us.rev1.z64
+        source "$controlfolder/utils/patcher.txt"
+        $ESUDO kill -9 $(pidof gptokeyb)
+        rm $file $GAMEDIR/baserom.us.rev1.z64
+      else
+        echo "This port requires the latest version of PortMaster." > $CUR_TTY
+      fi
       break
     fi
   done

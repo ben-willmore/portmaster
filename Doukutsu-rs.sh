@@ -47,9 +47,9 @@ export SDL_VIDEO_GL_DRIVER="$GAMEDIR/gl4es.aarch64/libGL.so.1"
 export SDL_VIDEO_EGL_DRIVER="$GAMEDIR/gl4es.aarch64/libEGL.so.1"
 fi
 
-$GPTOKEYB "$BINARY" -c "$BINARY.gptk" &
+$GPTOKEYB "$BINARY" -c "./$BINARY.gptk" &
 
-pm_platform_helper "$GAMEDIR/$BINARY"
+pm_platform_helper "$BINARY"
 
 ./$BINARY
 

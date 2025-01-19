@@ -1,8 +1,8 @@
 diff --git a/Cargo.toml b/Cargo.toml
-index 0f45e40..e625e9a 100644
+index 250ad93..c9733ef 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -78,8 +78,8 @@ num-traits = "0.2"
+@@ -80,8 +80,8 @@ num-traits = "0.2"
  open = "3.2"
  paste = "1.0"
  pelite = { version = ">=0.9.2", default-features = false, features = ["std"] }
@@ -13,7 +13,7 @@ index 0f45e40..e625e9a 100644
  rc-box = "1.2.0"
  serde = { version = "1", features = ["derive"] }
  serde_derive = "1"
-@@ -95,7 +95,7 @@ xmltree = "0.10"
+@@ -97,7 +97,7 @@ xmltree = "0.10"
  
  #hack to not link SDL_image on Windows(causes a linker error)
  [target.'cfg(not(target_os = "windows"))'.dependencies]
@@ -23,7 +23,7 @@ index 0f45e40..e625e9a 100644
  [target.'cfg(target_os = "windows")'.dependencies]
  winapi = { version = "0.3", features = ["winuser"] }
 diff --git a/src/framework/backend_sdl2.rs b/src/framework/backend_sdl2.rs
-index fd91da3..8627420 100644
+index 6851f0a..3a84366 100644
 --- a/src/framework/backend_sdl2.rs
 +++ b/src/framework/backend_sdl2.rs
 @@ -169,7 +169,7 @@ impl SDL2EventLoop {
@@ -68,3 +68,35 @@ index e598415..aa91df8 100644
  }
  
  #[inline(always)]
+diff --git a/src/menu/settings_menu.rs b/src/menu/settings_menu.rs
+index ad4fbaf..4cc3664 100644
+--- a/src/menu/settings_menu.rs
++++ b/src/menu/settings_menu.rs
+@@ -375,8 +375,8 @@ impl SettingsMenu {
+             MenuEntry::Active(state.loc.t("menus.options_menu.behavior").to_owned()),
+         );
+ 
+-        self.main
+-            .push_entry(MainMenuEntry::Links, MenuEntry::Active(state.loc.t("menus.options_menu.links").to_owned()));
++        //self.main
++        //    .push_entry(MainMenuEntry::Links, MenuEntry::Active(state.loc.t("menus.options_menu.links").to_owned()));
+ 
+         self.links
+             .push_entry(LinksMenuEntry::Title, MenuEntry::Disabled(state.loc.t("menus.options_menu.links").to_owned()));
+@@ -392,11 +392,11 @@ impl SettingsMenu {
+         );
+         self.links.push_entry(LinksMenuEntry::Link(GETPLUS_LINK), MenuEntry::Active("Get Cave Story+".to_owned()));
+ 
+-        #[cfg(not(any(target_os = "horizon")))]
+-        self.main.push_entry(
+-            MainMenuEntry::Advanced,
+-            MenuEntry::Active(state.loc.t("menus.options_menu.advanced").to_owned()),
+-        );
++        //[cfg(not(any(target_os = "horizon")))]
++        //self.main.push_entry(
++        //    MainMenuEntry::Advanced,
++        //    MenuEntry::Active(state.loc.t("menus.options_menu.advanced").to_owned()),
++        //);
+ 
+         self.advanced.push_entry(
+             AdvancedMenuEntry::Title,

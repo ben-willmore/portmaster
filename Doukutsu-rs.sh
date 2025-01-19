@@ -1,6 +1,5 @@
 
 #!/bin/bash
-# PORTMASTER: doukutsu-rs.zip, Doukutsu-rs.sh
 
 XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
 
@@ -47,8 +46,6 @@ if [ "$LIBGL_FB" != "" ]; then
 export SDL_VIDEO_GL_DRIVER="$GAMEDIR/gl4es.aarch64/libGL.so.1"
 export SDL_VIDEO_EGL_DRIVER="$GAMEDIR/gl4es.aarch64/libEGL.so.1"
 fi
-
-LD_LIBRARY_PATH=$GAMEDIR/libs.aarch64:$LD_LIBRARY_PATH
 
 $GPTOKEYB "$BINARY" -c "$BINARY.gptk" &
 

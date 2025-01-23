@@ -1,5 +1,4 @@
 #!/bin/bash
-# PORTMASTER: perfectdark.zip, Perfect Dark.sh
 
 XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
 
@@ -21,6 +20,7 @@ get_controls
 
 GAMEDIR=/$directory/ports/perfectdark
 CONFDIR="$GAMEDIR/conf/"
+BINARY=pd.arm64
 
 mkdir -p "$GAMEDIR/conf/data"
 
@@ -53,11 +53,11 @@ else
   source "${controlfolder}/libgl_default.txt"
 fi
 
-$GPTOKEYB "pd.aarch64" -c "./pd.gptk" &
+$GPTOKEYB "$BINARY" &
 
-echo Running pd.aarch64
-pm_platform_helper "$GAMEDIR/pd.aarch64"
+echo Running $BINARY
+pm_platform_helper "$GAMEDIR/$BINARY"
 
-./pd.aarch64
+./$BINARY
 
 pm_finish

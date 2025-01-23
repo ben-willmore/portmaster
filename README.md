@@ -12,25 +12,19 @@ Place the relevant .zip file in `/userdata/system/.local/share/Portmaster/autoin
 
 These may be applicable to other other ports.
 
-## Missing libFLAC.so.8 or libcrypto.so.1.1
+## Missing libFLAC.so.8, libcrypto.so.1.1, libwebp.so.6
 
-Messages about these missing libraries can be fixed as follows:
+Messages about these missing libraries can be fixed (for 64-bit ports) as follows:
 
 * Install the port as normal
-* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs) to `<portfolder>/libs/` or `<portfolder/libs.aarch64` if they exist. If they don't, create a folder called `libs.aarch64` and put the file there.
+* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs.aarch64) to `<portfolder>/libs/` or `<portfolder/libs.aarch64` if they exist. If they don't, create a folder called `libs.aarch64` and put the file there.
 
 **OR**
 
-* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs) to `<portfolder>/libs/` to `/usr/lib/`. Then run `batocera-save-overlay` to make the addition permanent. This should fix all ports with this problem, by making the library available to all programs.
+* Copy the relevant library from [here](https://github.com/ben-willmore/portmaster/blob/main/libs.aarch64) to `<portfolder>/libs/` to `/usr/lib/`. Then run `batocera-save-overlay` to make the addition permanent. This should fix all ports with this problem, by making the library available to all programs.
 
-### libFLAC.so.8:
-* Exhumed
-* NAM
-* World War II GI
+32-bit ports can be fixed similarly, but with files from [here](https://github.com/ben-willmore/portmaster/blob/main/libs.armhf).
 
-### libcrypto.1.1:
-* Hurrican
-* Moonlight
 
 ## Problems with libEGL
 
@@ -48,18 +42,6 @@ If the above doesn't work you may also need to put a new libGL.so.1 in the same 
 
 This is likely to be needed for the following:
 
-### 64-bit:
-* Billy Frontier
-
-### 64-bit (put library in rlvm/lib and edit .sh):
-* Air
-* Clannad
-* Kanon
-* Little Busters!
-* Planetarian
-
-64-bit libraries are [here](https://github.com/ben-willmore/portmaster/blob/main/gl4es.aarch64)
-
 ### 32 bit:
 * Bit Trip Runner 2
 * Super Meat Boy
@@ -68,4 +50,14 @@ This is likely to be needed for the following:
 * Serious Sam - The Second Encounter
 * Waking Mars
 
-32-bit-bit libraries are [here](https://github.com/ben-willmore/portmaster/blob/main/gl4es-armhf)
+32-bit libraries are [here](https://github.com/ben-willmore/portmaster/blob/main/gl4es.armhf)
+
+### 64-bit (these are special cases, need fix in rlvm virtual machine):
+
+* Air
+* Clannad
+* Kanon
+* Little Busters!
+* Planetarian
+
+64-bit libraries are [here](https://github.com/ben-willmore/portmaster/blob/main/gl4es.aarch64)
